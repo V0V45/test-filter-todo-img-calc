@@ -1,5 +1,5 @@
 import { StrictMode, useState } from 'react'
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 import './index.css'
 import Section1 from './pages/section-1/section-1.jsx';
 import Section2 from './pages/section-2/section-2.jsx';
@@ -66,7 +66,7 @@ export default function MainApp() {
 
     return (
         <StrictMode>
-            <BrowserRouter basename='/test-filter-todo-img-calc'>
+            <HashRouter>
                 <Routes>
                     <Route
                         index
@@ -109,7 +109,7 @@ export default function MainApp() {
                         <Route path="calc/:expression?" element={<Calc />} />
                     </Route>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </StrictMode>
     );
 }
