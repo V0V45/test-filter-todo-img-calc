@@ -1,0 +1,83 @@
+.hidden {
+    display: none;
+}
+
+.selector,
+.textFilter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 48px;
+}
+
+.selectElement,
+.filterInput {
+    background-color: var(--accentColor);
+    border: 1px solid var(--textColor);
+    border-radius: 8px;
+    padding: 11px 16px;
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+    width: 35%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.selectElement {
+    margin-left: 242px;
+}
+
+.selectElement:focus {
+    background-color: var(--accentBrightColor);
+}
+
+.filterInput {
+    margin-left: 286px;
+}
+
+.filterInput:focus {
+    outline: none;
+    background-color: var(--accentBrightColor);
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.table {
+    margin-top: 48px;
+    border-collapse: collapse;
+    border: 1px solid var(--textColor);
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+}
+
+.tableHead {
+    background-color: var(--accentBrightColor);
+}
+
+.tableHead tr th {
+    border: 1px solid var(--textColor);
+    font-weight: 300;
+    padding: 11px;
+}
+
+.tableBody {
+    background-color: var(--accentColor);
+}
+
+.tableBody tr td {
+    border: 1px solid var(--textColor);
+    padding: 11px;
+}
+
+.tableBody tr td:first-child {
+    text-align: center;
+}

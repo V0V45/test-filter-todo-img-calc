@@ -1,0 +1,17 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.radioIcon {
+    margin-right: 24px;
+}
+
+.buttonText {
+    font-weight: 300;
+    font-size: 32px;
+    color: var(--textColor);
+}

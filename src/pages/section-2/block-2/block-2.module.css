@@ -1,0 +1,19 @@
+.hidden {
+    display: none;
+}
+
+.title {
+    margin-bottom: 48px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.addTask {
+    align-self: flex-start;
+}

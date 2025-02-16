@@ -1,0 +1,23 @@
+.addTask {
+    padding: 4px;
+    background-color: var(--accentColor);
+    border-radius: 8px;
+    border: 1px solid var(--textColor);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.addTask:hover {
+    background-color: var(--accentBrightColor);
+}
+
+.addTaskText {
+    margin-left: 18px;
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+    margin-right: 24px;
+}

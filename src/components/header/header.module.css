@@ -1,0 +1,20 @@
+.header {
+    background-color: var(--accentBrightColor);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headerIcon {
+    margin: 8px 40px 8px 24px;
+}
+
+.headerLink {
+    font-size: 24px;
+}
+
+.headerLink:not(:last-child) {
+    margin-right: 40px;
+}

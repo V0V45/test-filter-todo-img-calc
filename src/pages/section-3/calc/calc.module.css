@@ -1,0 +1,118 @@
+.calcContainer {
+    width: 220px;
+    height: 344px;
+    display: grid;
+    grid-template-columns: 1fr 4px 1fr 4px 1fr 4px 1fr;
+    grid-template-rows: 1fr 24px 1fr 4px 1fr 4px 1fr 4px 1fr 4px 1fr;
+    grid-template-areas:
+        "input input input input input input input"
+        ". . . . . . ."
+        ". . . . clear . removeSymbol"
+        ". . . . . . ."
+        "zeroButton . comma . divideButton . multiplyButton"
+        ". . . . . . ."
+        "seven . eight . nine . minus"
+        ". . . . . . ."
+        "four . five . six . plus"
+        ". . . . . . ."
+        "one . two . three . equals";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--accentColor);
+    padding: 8px;
+    border: 1px solid var(--textColor);
+    border-radius: 8px;
+}
+
+.input {
+    grid-area: input;
+    justify-self: stretch;
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    border-radius: 8px;
+    padding: 3px 4px;
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+    text-align: right;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.input:focus {
+    outline: none;
+    background-color: var(--accentBrightColor);
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.removeSymbol {
+    grid-area: removeSymbol;
+}
+
+.zero {
+    grid-area: zeroButton;
+}
+
+.comma {
+    grid-area: comma;
+}
+
+.divide {
+    grid-area: divideButton;
+}
+
+.multiply {
+    grid-area: multiplyButton;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.equals {
+    grid-area: equals;
+}

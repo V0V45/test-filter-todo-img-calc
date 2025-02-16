@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.leftMenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 183px;
+    overflow-y: auto;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.hidden {
+    display: none;
+}
+
+.submenu {
+    margin: 48px 0 0 64px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.submenuTitle {
+    margin-bottom: 48px;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+}
+
+.mb {
+    margin-bottom: 48px;
+}
+
+.mt {
+    margin-top: 48px;
+}

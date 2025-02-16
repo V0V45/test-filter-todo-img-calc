@@ -1,0 +1,28 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.1s linear;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: var(--accentBrightColor);
+}
+
+.button:active {
+    background-color: var(--focusColor);
+}
+
+.buttonText {
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+    text-align: center;
+}
+
+.textContainer {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--textColor);
+}

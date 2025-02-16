@@ -1,0 +1,17 @@
+.active {
+    color: var(--textColor);
+}
+
+.inActive {
+    color: var(--accentColor);
+}
+
+.blockLink {
+    font-weight: 500;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.blockLink:not(:last-child) {
+    margin-right: 102px;
+}

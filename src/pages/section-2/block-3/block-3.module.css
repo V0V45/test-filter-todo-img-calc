@@ -1,0 +1,96 @@
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.previewAndData {
+    margin-top: 48px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.preview {
+    border-radius: 8px;
+    width: 320px;
+    height: 240px;
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+    margin-right: 64px;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.calm {
+    background-color: var(--accentColor);
+    border: 1px solid var(--textColor);
+}
+
+.dragging {
+    background-color: var(--focusColor);
+    border: 2px dashed var(--accentBrightColor);
+}
+
+.preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.data {
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+}
+
+.inputFile {
+    display: none;
+}
+
+.uploadButton {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--accentColor);
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid var(--textColor);
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.uploadButton:hover {
+    background-color: var(--accentBrightColor);
+}
+
+.text {
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.dropText {
+    margin: 16px;
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+}

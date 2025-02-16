@@ -1,0 +1,43 @@
+.task {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px;
+    border: 1px solid var(--textColor);
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.isDone {
+    background-color: var(--accentColor);
+}
+
+.isNotDone {
+    background-color: var(--accentBrightColor);
+}
+
+.isDoneButton {
+    margin-right: 18px;
+}
+
+.taskText {
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--textColor);
+    background-color: transparent;
+    border: none;
+}
+
+.taskText:focus {
+    outline: none;
+}
+
+.isDoneText {
+    text-decoration: line-through;
+}
+
+.deleteButton {
+    margin-left: auto;
+}
