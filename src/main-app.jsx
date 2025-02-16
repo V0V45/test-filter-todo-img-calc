@@ -66,7 +66,7 @@ export default function MainApp() {
 
     return (
         <StrictMode>
-            <BrowserRouter>
+            <BrowserRouter basename='/test-filter-todo-img-calc'>
                 <Routes>
                     <Route
                         index
